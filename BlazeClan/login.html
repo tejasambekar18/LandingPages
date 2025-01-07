@@ -1,0 +1,134 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://www.cloudcodes.com/cust/blazeclan/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,600i,700,700i&display=swap"
+        rel="stylesheet">
+    <title>Blazeclan SSO Portal</title>
+</head>
+
+<body>
+    <!-- Just an image -->
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img src="https://www.cloudcodes.com/cust/blazeclan/img/Logo.png" alt="blazeclan">
+        </a>
+    </nav>
+
+    <!-- <div class="container-fluid"> -->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-7 d-none d-lg-block rightDiv">
+                <div class="rightContent">
+                    <h1>Single Sign On For <br>All Apps</h1>
+                    <hr style="color: #fff; margin-top: 40px;" />
+                    <div class="row" style="transform: skewX(10deg);">
+                        <div class="col-sm-2">
+                            <div class="text-center">
+                                ​<picture>
+                                    <img src="https://www.cloudcodes.com/cust/blazeclan/img/Gmail.png" class="img-fluid rounded rounded-circle img-thumbnail"
+                                        alt="Gmail">
+                                </picture>
+                                <label for="gmail">Gmail</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-2">
+                            <div class="text-center">
+                                ​<picture>
+                                    <img src="https://www.cloudcodes.com/cust/blazeclan/img/Drive.png" class="img-fluid rounded rounded-circle img-thumbnail"
+                                        alt="Drive">
+                                </picture>
+                                <label for="Drive">Drive</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-2">
+                            <div class="text-center">
+                                ​<picture>
+                                    <img src="https://www.cloudcodes.com/cust/blazeclan/img/Docs.png" class="img-fluid rounded rounded-circle img-thumbnail"
+                                        alt="Docs">
+                                </picture>
+                                <label for="docs">Docs</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-2">
+                            <div class="text-center">
+                                ​<picture>
+                                    <img src="https://www.cloudcodes.com/cust/blazeclan/img/Sheets.png" class="img-fluid rounded rounded-circle img-thumbnail"
+                                        alt="Sheets">
+                                </picture>
+                                <label for="Sheets">Sheets</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-2">
+                            <div class="text-center">
+                                ​<picture>
+                                    <img src="https://www.cloudcodes.com/cust/blazeclan/img/Slides.png" class="img-fluid rounded rounded-circle img-thumbnail"
+                                        alt="Slides">
+                                </picture>
+                                <label for="Slides">Slides</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-2">
+                            <div class="text-center">
+                                ​<picture>
+                                    <img src="https://www.cloudcodes.com/cust/blazeclan/img/Calendar.png" class="img-fluid rounded rounded-circle img-thumbnail"
+                                        alt="Calendar">
+                                </picture>
+                                <label for="Calendar">Calendar</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center" style="padding-top: 15px;">
+                        <p style="font-size: 17px; font-weight: 500;letter-spacing: 1px;">& Many more...</p>
+                    </div>
+                    <hr style="margin-bottom:30px; ">
+                    <div style="padding-top: 15px;">
+                        <p style="font-size: 17px; font-weight: 500;letter-spacing: 1px;">This website is being managed by Blazeclan
+                            technologies IT Department.</p>
+                        <p style="font-size: 17px; font-weight: 500;letter-spacing: 1px;">Reach out to us at: <span
+                                style="color: #ff6b00; font-weight: 500;letter-spacing: 1px;">ithelpdesk@blazeclan.com</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-5">
+                <div class="card loginForm">
+                    <div class="card-body">
+                        <h5 class="card-title">Blazeclan SSO Portal</h5>
+                        <p class="card-subtitle">Enter your details</p>
+                        <form action="/AuthenticateUser" style="padding-top: 40px;">
+                            <div class="form-group" id="usernameDiv">
+                                <label for="username"><img src="https://www.cloudcodes.com/cust/blazeclan/img/2.png" style="padding-bottom: 5px;width: 13px;" />
+                                    Username</label>
+                                <input type="text" class="form-control" id="login-name" placeholder="example@blazeclan.com">
+                            </div>
+                            <div class="form-group" id="passwordDiv">
+                                <label for="password"><img src="https://www.cloudcodes.com/cust/blazeclan/img/1.png" style="padding-bottom: 5px;width: 13px;" />
+                                    Password</label>
+                                <input type="password" class="form-control" id="password" placeholder="xxxxxxxxx">
+                            </div>
+                            <div class="form-group" style="margin-top: 1.5rem;">
+                                <button class="form-control submitbtn" type="submit"
+                                    class="btn btn-light">Login</button>
+                            </div>
+                            <div class="form-group text-center" id="passwordDiv" style="margin-top: 1.5rem;">
+                                <span class="resetLink">Self Service</span> <a class="resetLink" href="/SelfResetPassword"><span style="color:#ff6b00; font-weight: 600;">Password Reset</span></a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
